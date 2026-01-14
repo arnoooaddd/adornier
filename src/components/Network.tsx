@@ -6,6 +6,7 @@ const locations = [
   { city: "Lausanne", country: "Switzerland" },
   { city: "Annecy", country: "France" },
   { city: "Balkans", country: "Region" },
+  { city: "Middle East", country: "Region" },
 ];
 
 const sectors = [
