@@ -15,7 +15,7 @@ const Ventures = () => {
           <p className="text-secondary font-medium tracking-[0.2em] uppercase text-sm mb-4">
             Our Ventures
           </p>
-          <h2 className="section-title mb-6">Beyond Advisory</h2>
+          <h2 className="section-title mb-6">Our Ventures</h2>
           <p className="section-subtitle mx-auto">
             Alongside our consulting work, we're actively building businesses.
           </p>
@@ -34,10 +34,15 @@ const Ventures = () => {
                 <Building2 className="text-secondary" size={32} />
               </div>
               <div className="flex-1">
-                <div className="flex items-center gap-2 mb-3">
-                  <h3 className="font-display text-2xl md:text-3xl font-semibold">Agendac</h3>
+                <a 
+                  href="https://agendac.fr?utm_source=adornier.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 mb-3 group/link"
+                >
+                  <h3 className="font-display text-2xl md:text-3xl font-semibold group-hover/link:text-secondary transition-colors">Agendac</h3>
                   <ArrowUpRight className="text-secondary" size={20} />
-                </div>
+                </a>
                 <p className="text-secondary font-medium mb-4">
                   Business Development for Home Construction
                 </p>

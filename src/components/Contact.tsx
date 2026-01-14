@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Linkedin } from "lucide-react";
+import { Mail, MapPin, Linkedin, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -39,11 +39,38 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold mb-1">Email</p>
                     <a 
-                      href="mailto:contact@adornier.com" 
+                      href="mailto:contact@adornier.net" 
                       className="text-muted-foreground hover:text-secondary transition-colors"
                     >
-                      contact@adornier.com
+                      contact@adornier.net
                     </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                    <MessageCircle className="text-secondary" size={20} />
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-1">WhatsApp</p>
+                    <div className="flex flex-col gap-1">
+                      <a 
+                        href="https://wa.me/33628545978"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-secondary transition-colors"
+                      >
+                        Arno Adornier
+                      </a>
+                      <a 
+                        href="https://wa.me/41763424595"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-secondary transition-colors"
+                      >
+                        Kerim Jakupovic
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -96,7 +123,7 @@ const Contact = () => {
                   Whether you're raising capital, seeking growth, or looking for strategic connections—we're here to help.
                 </p>
                 <a 
-                  href="mailto:contact@adornier.com" 
+                  href="mailto:contact@adornier.net" 
                   className="btn-primary w-full sm:w-auto"
                 >
                   Send Us an Email

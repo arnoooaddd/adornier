@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin } from "lucide-react";
+import { Linkedin, MessageCircle } from "lucide-react";
 import kerimPhoto from "@/assets/kerim-profile.jpg";
 import arnoPhoto from "@/assets/arno-profile.jpg";
 
@@ -9,6 +9,7 @@ const founders = [
     role: "Co-Founder",
     image: kerimPhoto,
     linkedin: "https://www.linkedin.com/in/kerim-jakupovic/",
+    whatsapp: "https://wa.me/41763424595",
     education: "MSc in Finance, HEC Lausanne",
     description: "Finance specialist with deep expertise in investment strategy and startup fundraising. Kerim brings rigorous analytical thinking and a vast network in the financial sector.",
   },
@@ -17,6 +18,7 @@ const founders = [
     role: "Co-Founder",
     image: arnoPhoto,
     linkedin: "https://www.linkedin.com/in/arno-ador/",
+    whatsapp: "https://wa.me/33628545978",
     education: "Bachelor (USA) & University Diploma in Applied Physics (France)",
     description: "With a background in applied physics and international experience, Arno combines technical insight with strategic business development across diverse industries.",
   },
@@ -66,15 +68,26 @@ const Founders = () => {
               <p className="text-muted-foreground text-sm mb-4">{founder.education}</p>
               <p className="text-muted-foreground leading-relaxed mb-6">{founder.description}</p>
               
-              <a
-                href={founder.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-secondary hover:text-gold-light transition-colors"
-              >
-                <Linkedin size={20} />
-                <span className="text-sm font-medium">Connect on LinkedIn</span>
-              </a>
+              <div className="flex items-center justify-center gap-4">
+                <a
+                  href={founder.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-secondary hover:text-gold-light transition-colors"
+                >
+                  <Linkedin size={20} />
+                  <span className="text-sm font-medium">LinkedIn</span>
+                </a>
+                <a
+                  href={founder.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-secondary hover:text-gold-light transition-colors"
+                >
+                  <MessageCircle size={20} />
+                  <span className="text-sm font-medium">WhatsApp</span>
+                </a>
+              </div>
             </motion.div>
           ))}
         </div>
