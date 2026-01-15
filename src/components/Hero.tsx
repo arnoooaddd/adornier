@@ -38,7 +38,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-muted-foreground text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed mb-12"
         >
-          Connecting visionary founders with capital, markets, and opportunities across the United States, Europe, and beyond.
+          Connecting visionary founders with capital, markets, and opportunities across the United States, Europe, and the Middle East.
         </motion.p>
 
         <motion.div
