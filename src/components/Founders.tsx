@@ -5,6 +5,15 @@ import arnoPhoto from "@/assets/arno-profile.jpg";
 
 const founders = [
   {
+    name: "Arno Adornier",
+    role: "Co-Founder",
+    image: arnoPhoto,
+    linkedin: "https://www.linkedin.com/in/arno-ador/",
+    whatsapp: "https://wa.me/33628545978",
+    education: "Bachelor BA in Physics (USA) & University Diploma in Applied Physics (France)",
+    description: "With a background in applied physics and international experience, Arno combines technical insight with strategic business development across diverse industries.",
+  },
+  {
     name: "Kerim Jakupovic",
     role: "Co-Founder",
     image: kerimPhoto,
@@ -12,15 +21,6 @@ const founders = [
     whatsapp: "https://wa.me/41763424595",
     education: "MSc in Finance, HEC Lausanne",
     description: "Finance specialist with deep expertise in investment strategy and startup fundraising. Kerim brings rigorous analytical thinking and a vast network in the financial sector.",
-  },
-  {
-    name: "Arno Adornier",
-    role: "Co-Founder",
-    image: arnoPhoto,
-    linkedin: "https://www.linkedin.com/in/arno-ador/",
-    whatsapp: "https://wa.me/33628545978",
-    education: "Bachelor (USA) & University Diploma in Applied Physics (France)",
-    description: "With a background in applied physics and international experience, Arno combines technical insight with strategic business development across diverse industries.",
   },
 ];
 
