@@ -57,11 +57,6 @@ const Services = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Elfsight Website Translator Widget - Mobile Only */}
-        <div className="md:hidden flex justify-center mt-12">
-          <div className="elfsight-app-6dd310c4-c5ea-42d4-9c2d-aa2455a13e4a" data-elfsight-app-lazy></div>
-        </div>
       </div>
     </section>
   );
