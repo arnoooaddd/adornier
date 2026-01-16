@@ -28,6 +28,8 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
+            {/* Elfsight Website Translator Widget */}
+            <div className="elfsight-app-6dd310c4-c5ea-42d4-9c2d-aa2455a13e4a" data-elfsight-app-lazy></div>
           </nav>
 
           {/* Mobile Menu Toggle */}
