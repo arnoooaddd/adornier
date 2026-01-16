@@ -28,11 +28,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        
-        {/* Elfsight Website Translator Widget */}
-        <div className="mt-6 flex justify-center">
-          <div className="elfsight-app-6dd310c4-c5ea-42d4-9c2d-aa2455a13e4a" data-elfsight-app-lazy></div>
-        </div>
       </div>
     </footer>
   );
