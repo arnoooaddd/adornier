@@ -24,7 +24,7 @@ const ventures = [
 
 const Ventures = () => {
   return (
-    <section id="ventures" className="py-24 md:py-32 bg-navy-medium">
+    <section id="ventures" className="py-24 md:py-32 bg-navy-medium" aria-label="Our Ventures">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
