@@ -1,20 +1,24 @@
 import { motion } from "framer-motion";
-import { Building2, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import taohLogo from "@/assets/taoh-logo.webp";
+import agendacLogo from "@/assets/agendac-logo.webp";
 
 const ventures = [
   {
     name: "The Alpha Omega Hub",
     url: "https://thealphaomegahub.com/?utm_source=adornier.com",
-    tagline: "Growth Accelerator for Home-Services",
+    tagline: "Growth Accelerator for Home-Services Businesses",
     description: "The Alpha Omega Hub is a growth accelerator dedicated to home-services businesses in the United States. We help contractors in industries such as HVAC, solar, roofing, and home improvement strengthen their digital presence, generate qualified leads, and build scalable marketing and communication systems that support long-term growth.",
     locations: ["United States"],
+    logo: taohLogo,
   },
   {
     name: "Agendac",
     url: "https://agendac.fr?utm_source=adornier.com",
-    tagline: "Business Development for Home Construction",
+    tagline: "Business Development for Home Construction Businesses",
     description: "Agendac is our specialized business development firm dedicated to home construction companies in francophone European countries. We help builders grow their client base and streamline their commercial operations across France, Switzerland, Belgium, and Luxembourg.",
     locations: ["France", "Switzerland", "Belgium", "Luxembourg"],
+    logo: agendacLogo,
   },
 ];
 
@@ -49,8 +53,8 @@ const Ventures = () => {
             >
               <div className="card-elevated p-8 md:p-12 group hover:border-secondary/40 transition-all duration-500">
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/20 transition-colors duration-300">
-                    <Building2 className="text-secondary" size={32} />
+                  <div className="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0">
+                    <img src={venture.logo} alt={`${venture.name} logo`} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex-1">
                     <a 
