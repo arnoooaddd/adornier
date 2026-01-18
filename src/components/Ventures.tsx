@@ -7,7 +7,7 @@ const ventures = [
   {
     name: "The Alpha Omega Hub",
     url: "https://thealphaomegahub.com/?utm_source=adornier.com",
-    tagline: "Growth Accelerator for Home-Services Businesses",
+    tagline: "Growth Accelerator for Home-Services Companies",
     description: "The Alpha Omega Hub is a growth accelerator dedicated to home-services businesses in the United States. We help contractors in industries such as HVAC, solar, roofing, and home improvement strengthen their digital presence, generate qualified leads, and build scalable marketing and communication systems that support long-term growth.",
     locations: ["United States"],
     logo: taohLogo,
@@ -15,7 +15,7 @@ const ventures = [
   {
     name: "Agendac",
     url: "https://agendac.fr?utm_source=adornier.com",
-    tagline: "Business Development for Home Construction Businesses",
+    tagline: "Business Development for Home Construction Companies",
     description: "Agendac is our specialized business development firm dedicated to home construction companies in francophone European countries. We help builders grow their client base and streamline their commercial operations across France, Switzerland, Belgium, and Luxembourg.",
     locations: ["France", "Switzerland", "Belgium", "Luxembourg"],
     logo: agendacLogo,
