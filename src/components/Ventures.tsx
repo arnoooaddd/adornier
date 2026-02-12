@@ -3,6 +3,15 @@ import { ArrowUpRight } from "lucide-react";
 import taohLogo from "@/assets/taoh-logo.webp";
 import agendacLogo from "@/assets/agendac-logo.webp";
 
+const getAgendacUrl = () => {
+  const params = new URLSearchParams(window.location.search);
+  const lang = params.get("lang");
+  if (lang === "fr") {
+    return "https://agendac.fr/?lang=fr&utm_source=adornier.com";
+  }
+  return "https://agendac.fr/?lang=en-US&utm_source=adornier.com";
+};
+
 const ventures = [
   {
     name: "The Alpha Omega Hub",
@@ -14,7 +23,7 @@ const ventures = [
   },
   {
     name: "Agendac",
-    url: "https://agendac.fr?utm_source=adornier.com",
+    get url() { return getAgendacUrl(); },
     tagline: "Business Development for Home Construction Companies",
     description: "Agendac is our specialized business development firm dedicated to home construction companies in francophone European countries. We help builders grow their client base and streamline their commercial operations across France, Switzerland, Belgium, and Luxembourg.",
     locations: ["France", "Switzerland", "Belgium", "Luxembourg"],
