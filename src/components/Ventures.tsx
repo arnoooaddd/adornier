@@ -85,7 +85,7 @@ const Ventures = () => {
                       className="flex items-center gap-2 group/link md:hidden"
                     >
                       <h3 className="font-display text-xl font-semibold group-hover/link:text-secondary transition-colors">
-                        {venture.name}
+                        {venture.name} {venture.flag}
                       </h3>
                       <ArrowUpRight className="text-secondary" size={18} />
                     </a>
@@ -98,7 +98,7 @@ const Ventures = () => {
                       className="hidden md:flex items-center gap-2 mb-3 group/link"
                     >
                       <h3 className="font-display text-2xl md:text-3xl font-semibold group-hover/link:text-secondary transition-colors">
-                        {venture.name}
+                        {venture.name} {venture.flag}
                       </h3>
                       <ArrowUpRight className="text-secondary" size={20} />
                     </a>
