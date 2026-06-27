@@ -1,28 +1,58 @@
 import { motion } from "framer-motion";
-import { Linkedin, MessageCircle, Users } from "lucide-react";
+import { Linkedin, MessageCircle, Users, Instagram } from "lucide-react";
 import kerimPhoto from "@/assets/kerim-profile.jpg";
 import arnoPhoto from "@/assets/arno-profile.jpg";
 
-const founders = [
+type Social = {
+  type: "linkedin" | "whatsapp" | "instagram";
+  href: string;
+  label: string;
+};
+
+type Founder = {
+  name: string;
+  legalName?: string;
+  role: string;
+  image: string;
+  education: string;
+  description: string;
+  socials: Social[];
+};
+
+const founders: Founder[] = [
   {
     name: "Arno Adornier",
+    legalName: "Arnaud E. L. Utille Adornier",
     role: "Co-Founder",
     image: arnoPhoto,
-    linkedin: "https://www.linkedin.com/in/arno-ador/",
-    whatsapp: "https://wa.me/33628545978",
     education: "Bachelor BA in Physics (USA) & University Diploma in Applied Physics (France)",
-    description: "With a background in applied physics and international experience, Arno combines technical insight with strategic business development across diverse industries.",
+    description:
+      "With a background in applied physics and international experience, Arno combines technical insight with strategic business development across diverse industries.",
+    socials: [
+      { type: "linkedin", href: "https://www.linkedin.com/in/arno-ador/", label: "LinkedIn" },
+      { type: "instagram", href: "https://www.instagram.com/arno.adornier/", label: "Instagram" },
+      { type: "whatsapp", href: "https://wa.me/33628545978", label: "WhatsApp" },
+    ],
   },
   {
     name: "Kerim Jakupovic",
     role: "Co-Founder",
     image: kerimPhoto,
-    linkedin: "https://www.linkedin.com/in/kerim-jakupovic/",
-    whatsapp: "https://wa.me/41763424595",
     education: "MSc in Finance, HEC Lausanne",
-    description: "Finance specialist with deep expertise in investment strategy and startup fundraising. Kerim brings rigorous analytical thinking and a vast network in the financial sector.",
+    description:
+      "Finance specialist with deep expertise in investment strategy and startup fundraising. Kerim brings rigorous analytical thinking and a vast network in the financial sector.",
+    socials: [
+      { type: "linkedin", href: "https://www.linkedin.com/in/kerim-jakupovic/", label: "LinkedIn" },
+      { type: "whatsapp", href: "https://wa.me/41763424595", label: "WhatsApp" },
+    ],
   },
 ];
+
+const SocialIcon = ({ type }: { type: Social["type"] }) => {
+  if (type === "linkedin") return <Linkedin size={18} />;
+  if (type === "instagram") return <Instagram size={18} />;
+  return <MessageCircle size={18} />;
+};
 
 const Founders = () => {
   return (
@@ -62,37 +92,33 @@ const Founders = () => {
                   className="w-full h-full rounded-full object-cover relative z-10 border-2 border-secondary/30"
                 />
               </div>
-              
+
               <h3 className="font-display text-2xl font-semibold mb-1">{founder.name}</h3>
+              {founder.legalName && (
+                <p className="text-xs text-muted-foreground/70 italic mb-2">{founder.legalName}</p>
+              )}
               <p className="text-secondary font-medium mb-2">{founder.role}</p>
               <p className="text-muted-foreground text-sm mb-4">{founder.education}</p>
               <p className="text-muted-foreground leading-relaxed mb-6">{founder.description}</p>
-              
-              <div className="flex items-center justify-center gap-4">
-                <a
-                  href={founder.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-secondary hover:text-gold-light transition-colors"
-                >
-                  <Linkedin size={20} />
-                  <span className="text-sm font-medium">LinkedIn</span>
-                </a>
-                <a
-                  href={founder.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-secondary hover:text-gold-light transition-colors"
-                >
-                  <MessageCircle size={20} />
-                  <span className="text-sm font-medium">WhatsApp</span>
-                </a>
+
+              <div className="flex items-center justify-center gap-4 flex-wrap">
+                {founder.socials.map((s) => (
+                  <a
+                    key={s.type}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-secondary hover:text-gold-light transition-colors"
+                  >
+                    <SocialIcon type={s.type} />
+                    <span className="text-sm font-medium">{s.label}</span>
+                  </a>
+                ))}
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Team Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -103,7 +129,8 @@ const Founders = () => {
           <div className="flex items-center justify-center gap-3">
             <Users className="text-secondary" size={22} />
             <p className="text-lg md:text-xl text-muted-foreground">
-              …and our team of <span className="text-foreground font-semibold">15 people</span> across <span className="text-foreground font-semibold">4 continents</span>
+              …and our team of <span className="text-foreground font-semibold">15 people</span>{" "}
+              across <span className="text-foreground font-semibold">4 continents</span>
             </p>
           </div>
         </motion.div>

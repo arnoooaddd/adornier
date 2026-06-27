@@ -6,10 +6,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#services", label: "Services" },
     { href: "#founders", label: "Founders" },
+    { href: "#ventures", label: "Our Businesses" },
     { href: "#network", label: "Network" },
-    { href: "#ventures", label: "Ventures" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -28,13 +27,11 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            {/* Elfsight Website Translator Widget */}
             <div className="elfsight-app-6dd310c4-c5ea-42d4-9c2d-aa2455a13e4a" data-elfsight-app-lazy></div>
           </nav>
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden flex items-center gap-3">
-            {/* Elfsight Website Translator Widget - Mobile */}
             <div className="elfsight-app-6dd310c4-c5ea-42d4-9c2d-aa2455a13e4a" data-elfsight-app-lazy></div>
             <button
               className="text-foreground p-2"
@@ -46,7 +43,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.nav
