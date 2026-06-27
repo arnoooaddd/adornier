@@ -22,6 +22,7 @@ const ventures = [
     description:
       "The Alpha Omega Hub is a digital marketing agency based in the United States. We help businesses of all kinds strengthen their digital presence, generate qualified leads, and build scalable marketing and communication systems that support long-term growth.",
     locations: ["United States"],
+    flag: "🇺🇸",
     logo: taohLogo,
   },
   {
