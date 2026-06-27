@@ -18,9 +18,9 @@ const ventures = [
     name: "The Alpha Omega Hub",
     domain: "thealphaomegahub.com",
     url: "https://thealphaomegahub.com/?utm_source=adornier.com",
-    tagline: "Growth Accelerator for Home-Services Companies",
+    tagline: "Digital Marketing Agency in the United States",
     description:
-      "The Alpha Omega Hub is a growth accelerator dedicated to home-services businesses in the United States. We help contractors in industries such as HVAC, solar, roofing, and home improvement strengthen their digital presence, generate qualified leads, and build scalable marketing and communication systems that support long-term growth.",
+      "The Alpha Omega Hub is a digital marketing agency based in the United States. We help businesses of all kinds strengthen their digital presence, generate qualified leads, and build scalable marketing and communication systems that support long-term growth.",
     locations: ["United States"],
     logo: taohLogo,
   },
@@ -32,8 +32,9 @@ const ventures = [
     },
     tagline: "Business Development for Home Construction Companies",
     description:
-      "Agendac is our specialized business development firm dedicated to home construction companies in francophone European countries. We help builders grow their client base and streamline their commercial operations across France, Switzerland, Belgium, and Luxembourg.",
+      "Agendac is our specialized business development firm, established in France and operating across Europe. We help home construction companies grow their client base and streamline their commercial operations across France, Switzerland, Belgium, and Luxembourg.",
     locations: ["France", "Switzerland", "Belgium", "Luxembourg"],
+    flag: "🇫🇷",
     logo: agendacLogo,
   },
 ];
