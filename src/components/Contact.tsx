@@ -87,15 +87,8 @@ const Contact = () => {
                     <p className="font-semibold mb-1">Connect With Us</p>
                     <div className="flex flex-col gap-1">
                       <a 
-                        href="https://www.linkedin.com/in/kerim-jakupovic/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-secondary transition-colors"
-                      >
-                        Kerim Jakupovic
-                      </a>
-                      <a 
                         href="https://www.linkedin.com/in/arno-ador/"
+
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-secondary transition-colors"
