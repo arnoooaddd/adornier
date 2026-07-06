@@ -18,15 +18,8 @@ const Footer = () => {
             >
               Arno
             </a>
-            <a 
-              href="https://www.linkedin.com/in/kerim-jakupovic/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-secondary transition-colors text-sm"
-            >
-              Kerim
-            </a>
           </div>
+
         </div>
       </div>
     </footer>

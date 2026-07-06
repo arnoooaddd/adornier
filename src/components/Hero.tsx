@@ -40,8 +40,8 @@ const Hero = () => {
           className="text-muted-foreground text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed mb-12"
         >
           The gateway to our two businesses — founded and led by{" "}
-          <span className="text-foreground font-medium">Arno Adornier</span> and{" "}
-          <span className="text-foreground font-medium">Kerim Jakupovic</span>, with a team of 15 across 4 continents.
+          <span className="text-foreground font-medium">Arno Adornier</span>, with a team of 15 across 4 continents.
+
         </motion.p>
 
         {/* Big Language Switcher */}
