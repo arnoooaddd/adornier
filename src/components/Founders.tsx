@@ -57,13 +57,14 @@ const Founders = () => {
           <p className="text-secondary font-medium tracking-[0.2em] uppercase text-sm mb-4">
             Leadership
           </p>
-          <h2 className="section-title mb-6">The Founders</h2>
+          <h2 className="section-title mb-6">The Founder</h2>
           <p className="section-subtitle mx-auto">
-            A complementary partnership combining finance expertise and technical innovation.
+            Bridging technical insight and strategic business development.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+        <div className="grid gap-8 lg:gap-12 max-w-2xl mx-auto">
+
           {founders.map((founder, index) => (
             <motion.div
               key={founder.name}
