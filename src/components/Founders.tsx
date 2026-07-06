@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Linkedin, MessageCircle, Users, Instagram } from "lucide-react";
-import kerimPhoto from "@/assets/kerim-profile.jpg";
 import arnoPhoto from "@/assets/arno-profile.jpg";
+
 
 type Social = {
   type: "linkedin" | "whatsapp" | "instagram";
