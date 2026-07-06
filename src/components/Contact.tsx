@@ -62,15 +62,8 @@ const Contact = () => {
                       >
                         Arno Adornier
                       </a>
-                      <a 
-                        href="https://wa.me/41763424595"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-secondary transition-colors"
-                      >
-                        Kerim Jakupovic
-                      </a>
                     </div>
+
                   </div>
                 </div>
 
