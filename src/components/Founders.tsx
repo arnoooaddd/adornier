@@ -34,19 +34,8 @@ const founders: Founder[] = [
       { type: "whatsapp", href: "https://wa.me/33628545978", label: "WhatsApp" },
     ],
   },
-  {
-    name: "Kerim Jakupovic",
-    role: "Co-Founder",
-    image: kerimPhoto,
-    education: "MSc in Finance, HEC Lausanne",
-    description:
-      "Finance specialist with deep expertise in investment strategy and startup fundraising. Kerim brings rigorous analytical thinking and a vast network in the financial sector.",
-    socials: [
-      { type: "linkedin", href: "https://www.linkedin.com/in/kerim-jakupovic/", label: "LinkedIn" },
-      { type: "whatsapp", href: "https://wa.me/41763424595", label: "WhatsApp" },
-    ],
-  },
 ];
+
 
 const SocialIcon = ({ type }: { type: Social["type"] }) => {
   if (type === "linkedin") return <Linkedin size={18} />;
