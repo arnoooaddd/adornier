@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Linkedin, MessageCircle, Users, Instagram } from "lucide-react";
+import kerimPhoto from "@/assets/kerim-profile.jpg";
 import arnoPhoto from "@/assets/arno-profile.jpg";
-
 
 type Social = {
   type: "linkedin" | "whatsapp" | "instagram";
@@ -34,8 +34,19 @@ const founders: Founder[] = [
       { type: "whatsapp", href: "https://wa.me/33628545978", label: "WhatsApp" },
     ],
   },
+  {
+    name: "Kerim Jakupovic",
+    role: "Co-Founder",
+    image: kerimPhoto,
+    education: "MSc in Finance, HEC Lausanne",
+    description:
+      "Finance specialist with deep expertise in investment strategy and startup fundraising. Kerim brings rigorous analytical thinking and a vast network in the financial sector.",
+    socials: [
+      { type: "linkedin", href: "https://www.linkedin.com/in/kerim-jakupovic/", label: "LinkedIn" },
+      { type: "whatsapp", href: "https://wa.me/41763424595", label: "WhatsApp" },
+    ],
+  },
 ];
-
 
 const SocialIcon = ({ type }: { type: Social["type"] }) => {
   if (type === "linkedin") return <Linkedin size={18} />;
@@ -57,14 +68,13 @@ const Founders = () => {
           <p className="text-secondary font-medium tracking-[0.2em] uppercase text-sm mb-4">
             Leadership
           </p>
-          <h2 className="section-title mb-6">The Founder</h2>
+          <h2 className="section-title mb-6">The Founders</h2>
           <p className="section-subtitle mx-auto">
-            Bridging technical insight and strategic business development.
+            A complementary partnership combining finance expertise and technical innovation.
           </p>
         </motion.div>
 
-        <div className="grid gap-8 lg:gap-12 max-w-2xl mx-auto">
-
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
           {founders.map((founder, index) => (
             <motion.div
               key={founder.name}
